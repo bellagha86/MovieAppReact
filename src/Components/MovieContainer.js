@@ -2,14 +2,16 @@ import React, { Component } from "react";
 import "./MovieContainer.css";
 import MovieList from "./MovieList";
 import Rating from "./MovieRating";
-import {MovieArray} from './data'
+import {MovieArray} from './data';
+
 
 class MovieContainer extends Component {
   state = {
     MovieArray,
     movieSearch: "",
     rating:"",
-    newMovie: {}
+    newMovie: {},
+
   };
   handleChange = e => {
     this.setState({
